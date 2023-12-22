@@ -58,7 +58,7 @@ public class StringListImpl implements StringList {
     @Override
     public String remove(int index) {
         String object = get(index);
-        for (int i = index; i < size; i++) {
+        for (int i = index; i < size-1; i++) {
             list[i] = list[i + 1];
         }
         size--;
